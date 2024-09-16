@@ -57,9 +57,7 @@ public class Activity8 {
         driver.findElement(AppiumBy.xpath("//android.widget.TextView[@text='Tab opener']")).click();
 
         // Scroll and locate elements
-        //driver.findElement(AppiumBy.androidUIAutomator(
-                //UiScrollable + ".scrollTextIntoView(\"Tab Opener\")"
-        //)).click();
+        driver.findElement(AppiumBy.androidUIAutomator(UiScrollable + ".scrollTextIntoView(\"Tab Opener\")")).click();
 
         // Wait for the page to load
         wait.until(ExpectedConditions.elementToBeClickable(AppiumBy.accessibilityId("Click Me!")));
