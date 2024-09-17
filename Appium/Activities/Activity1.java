@@ -36,7 +36,7 @@ public class Activity1 {
     // Test method
     @Test
     public void multiplyTest() {
-        // Perform the calculation
+        // Perform the calculation by locators 
         driver.findElement(AppiumBy.id("com.google.android.calculator:id/digit_6")).click();
         driver.findElement(AppiumBy.accessibilityId("multiply")).click();
         driver.findElement(AppiumBy.id("digit_8")).click();
