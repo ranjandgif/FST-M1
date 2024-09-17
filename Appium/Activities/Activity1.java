@@ -38,7 +38,8 @@ public class Activity1 {
     public void multiplyTest() {
         // Perform the calculation by id locators 
         driver.findElement(AppiumBy.id("com.google.android.calculator:id/digit_6")).click();
-	      // Perform the calculation by accessibility locators 
+	    
+// Perform the calculation by accessibility locators 
         driver.findElement(AppiumBy.accessibilityId("multiply")).click();
         driver.findElement(AppiumBy.id("digit_8")).click();
         driver.findElement(AppiumBy.accessibilityId("equals")).click();
