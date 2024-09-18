@@ -32,7 +32,7 @@ public class Newtest {
 	  //RestAssured assertions
 	  response.then().statusCode(200).body("[0].status",equalTo("alive"));
   }
-  //GET https://petstore.swagger.io/v2/pet/{petId}
+  
   @Test
   public void getRequestWithPathParam() {
 	  given()
